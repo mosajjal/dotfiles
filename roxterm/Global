@@ -1,0 +1,3 @@
+[roxterm options]
+only_warn_running=1
+separate=1
