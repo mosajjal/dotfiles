@@ -44,13 +44,16 @@
 "rofi -show"
   Alt + Tab
 
-"amixer -c 0 sset Master 3+"
+# "amixer -c 0 sset Master 3+"
+  "pamixer --increase 5 --allow-boost"
   m:0x11 + c:123
 
-"amixer -c 0 sset Master 3-"
+# "amixer -c 0 sset Master 3-"
+  "pamixer --decrease 5 --allow-boost"
   m:0x11 + c:122
 
-"amixer -c 0 sset Master toggle"
+# "amixer -c 0 sset Master toggle"
+  "pamixer --toggle-mute"
   m:0x10 + c:121
 
 "xbacklight -10"
