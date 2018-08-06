@@ -202,5 +202,5 @@ for_window [window_role="pop-up"] floating enable, border normal
 
 exec copyq
 exec setxkbmap -model pc105 -layout us,ir -option grp:alt_shift_toggle
-bindsym Print exec  scrot -b -d 1 -s '%Y%m%d%H%M%S.png' -e 'xclip -selection clipboard -t image/png -i $f  && mv $f /tmp/'
+bindsym --release Print exec  scrot  -s '%Y%m%d%H%M%S.png' -e 'xclip -selection clipboard -t image/png -i $f  && mv $f /tmp/'
 bindsym ctrl+l exec i3lock
